@@ -14,7 +14,7 @@ def resize_image(image, target_size):
     # Resize the image to the target size
     return cv2.resize(image, target_size, interpolation=cv2.INTER_AREA)
 
-def calculate_similarity_percentage(image1, image2, tolerance=100):
+def calculate_similarity_percentage(image1, image2, tolerance=50):
     # Calculate the absolute difference between the two images
     diff = cv2.absdiff(image1, image2)
 
@@ -26,7 +26,7 @@ def calculate_similarity_percentage(image1, image2, tolerance=100):
 
     return similarity_percentage
 
-def visualize_similarity(image1, image2, tolerance=100):
+def visualize_similarity(image1, image2, tolerance=50):
     # Calculate the absolute difference between the two images
     diff = cv2.absdiff(image1, image2)
 
