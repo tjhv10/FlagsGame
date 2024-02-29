@@ -51,7 +51,7 @@ def main():
         if guessed_country.lower().strip() == 'exit':
             print(correct_country)
             break
-        guessed_country = find_most_similar_string(guessed_country,countries) 
+        guessed_country = find_most_similar_string(guessed_country,countries)
         print("you guessed: "+ guessed_country)
         image2_path = "flags/" + guessed_country
 
